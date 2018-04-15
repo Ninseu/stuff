@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.container {
+    height: auto;
+    width: 100%;
+}
+
+.header{
+    background-image: url('../img/header/headerlogo.png');
+    background-size: cover;
+    background-position: top;
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+
+.text-box{
+    position: absolute;
+    bottom: 55%;
+    left: 18%;
+}
+
+.title{
+    display: block;
+    font-size: 40px;
+    font-family: Pacifico, sans-serif;
+    color: #fff;
+}
+
+.title span{
+    color: #2ecc71;
+}
+
+.paragraph{
+    display: block;
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.logo-box{
+    position: absolute;
+    bottom: 40%;
+    left: 18%;
+}
+
+.apple-logo{
+    padding-top: 50%;
+    padding-right: 15px;
+}
+.android-logo{
+    padding-top: 50%;
+    padding-right: 15px;
+}
+.windows-logo{
+    padding-top: 50%;
+    padding-right: 15px;
+}
+
+#features{
+    display: flex;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.editable, .flat, .reach{
+    width: 33.33%;
+    padding: 50px 0 50px 0;
+}
+
+.title1{
+    color: #222222;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 15px 0 15px 0;
+}
+
+.text{
+    color: #848484;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#get-notify{
+    background-color: #e3e3e3;
+    height: 400px;
+}
+#get-notify img{
+    /* Style for "img" */
+    width: 500px;
+    height: 307px;
+    float: right;
+    margin-right: 20px;
+    padding: 25px;
+    padding-top: -20px;
+}
+
+.get-notify-title{
+    color: #222222;
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 70px;
+    padding-bottom: 15px;
+}
+
+.some-text{
+    color: #848484;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.email-input{
+    padding-top: 25px;
+}
+.email-input input[type=text]{
+    width: 260px;
+    height: 48px;
+    border-radius: 12px;
+    border-style: none;
+}
+
+.notify-btn{
+    width: 120px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #2ecc71;
+    color: #fff;
+    border-style: none;
+    margin-left: 5px;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+}
+
+.notify-btn:hover{
+    background-color: #208e4e;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+.get-notify-title, .some-text, .email-input{
+    max-width: 50%;
+    margin-left: 16%;
+}
+
+#quote{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.quote1{
+    color: #848484;
+    font-family: "Helvetica Neue", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.name{
+    font-family: Raleway,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 30px 0 30px 0;
+}
+
+.say-hi{
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 30px 0 30px 0;
+}
+
+.text1{
+    font-size: 16px;
+    color: #848484;
+    font-family: "Helvetica Neue", sans-serif;
+    padding-bottom: 10px;
+}
+
+.social-icons{
+    padding-bottom: 15px;
+}
+
+#footer{
+    background-color: #e3e3e3;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#footer ul{
+    list-style-type: none;
+    display: inline;
+}
+
+#footer ul li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 16px;
+}
+
+li a{
+    text-decoration: none;
+    color: #848484;
+}
+
+a:hover{
+    color: #2ecc71;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+/*media queries*/
+
+/* Portrait phones and smaller */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .paragraph{
+        font-size: 95%;
+    }
+    .logo-box img{
+        width: 28%;
+    }
+    #features img{
+        width: 70%;
+    }
+   .title1{
+       font-size: 90%;
+       padding: 10px 5px 5px 10px;
+   }
+   .text{
+       font-size: 80%;
+       padding: 0 5px 5px 0;
+   }
+   #get-notify img{
+       margin: 0 auto;
+       float: left;
+       width: 100%;
+       height: 60%;
+   }
+   .get-notify-title{
+       font-size: 90%;
+   }
+   .some-text{
+       font-size: 80%;
+   }
+   .email-input input{
+       width: 25%;
+       height: 2em;
+       font-size: 65%;
+       border-radius: 5px;
+   }
+    .email-input input[type='text']{
+        width: 55%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+    }
+    input::placeholder{
+        font-size: 80%;
+    }
+
+    .quote1{
+        font-size: 80%;
+    }
+    .name{
+        font-size: 90%;
+    }
+    .say-hi{
+        font-size: 90%;
+    }
+    .text1{
+        font-size: 80%;
+    }
+    .list-items a{
+        font-size: 70%;
+    }
+    .pictures img{
+        padding: 5px 0 0 5px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width : 600px){
+    .paragraph{
+        font-size: 95%;
+    }
+    .logo-box img{
+        width: 28%;
+    }
+    #features img{
+        width: 70%;
+    }
+    .title1{
+        font-size: 90%;
+        padding: 10px 5px 5px 10px;
+    }
+    .text{
+        font-size: 80%;
+        padding: 0 5px 5px 0;
+    }
+    #get-notify img{
+        margin: 0 auto;
+        float: left;
+        width: 100%;
+        height: 60%;
+    }
+    #get-notify {
+        padding-bottom: 50px;
+    }
+    .get-notify-title{
+        font-size: 100%;
+    }
+    .some-text{
+        font-size: 80%;
+    }
+    .email-input input{
+        width: 15%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+    }
+    .email-input input[type='text']{
+        width: 30%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+    }
+    input::placeholder{
+        font-size: 80%;
+    }
+
+    .quote1{
+        font-size: 80%;
+    }
+    .name{
+        font-size: 90%;
+    }
+    .say-hi{
+        font-size: 90%;
+    }
+    .text1{
+        font-size: 80%;
+    }
+    .list-items a{
+        font-size: 70%;
+    }
+    .pictures img{
+        padding: 5px 0 0 5px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .paragraph{
+        font-size: 95%;
+    }
+    .logo-box img{
+        width: 28%;
+    }
+    #features img{
+        width: 70%;
+    }
+    .title1{
+        font-size: 90%;
+        padding: 10px 5px 5px 10px;
+    }
+    .text{
+        font-size: 80%;
+        padding: 0 5px 5px 0;
+    }
+    #get-notify img{
+        float: right;
+        width: 60%;
+        height: 80%;
+    }
+    #get-notify {
+        padding-bottom: 50px;
+    }
+    .get-notify-title{
+        font-size: 100%;
+        margin-left: 6%;
+    }
+    .some-text{
+        font-size: 80%;
+        margin-left: 6%;
+    }
+    .email-input input{
+        width: 13%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+    }
+    .email-input input[type='text']{
+        width: 26%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+        margin-left: -16%;
+    }
+    input::placeholder{
+        font-size: 80%;
+    }
+
+    .quote1{
+        font-size: 80%;
+    }
+    .name{
+        font-size: 90%;
+    }
+    .say-hi{
+        font-size: 90%;
+    }
+    .text1{
+        font-size: 80%;
+    }
+    .list-items a{
+        font-size: 70%;
+    }
+    .pictures img{
+        padding: 5px 0 0 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px){
+    .paragraph{
+        font-size: 95%;
+    }
+    .logo-box img{
+        width: 28%;
+    }
+    #features img{
+        width: 35%;
+    }
+    .title1{
+        font-size: 110%;
+        padding: 10px 5px 5px 10px;
+    }
+    .text{
+        font-size: 85%;
+        padding: 0 5px 5px 0;
+    }
+    #get-notify img{
+        float: right;
+        width: 60%;
+        height: 80%;
+    }
+    #get-notify{
+        padding-bottom: 80px;
+        height: 1000px;
+
+    }
+    .get-notify-title{
+        font-size: 110%;
+        margin-left: 10%;
+    }
+    .some-text{
+        font-size: 85%;
+    }
+    .email-input input{
+        width: 20%;
+        height: 2em;
+        font-size: 75%;
+        border-radius: 5px;
+    }
+    .email-input input[type='text']{
+        width: 30%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+        margin-left: -10%;
+    }
+    input::placeholder{
+        font-size: 85%;
+    }
+
+    .quote1{
+        font-size: 85%;
+    }
+    .name{
+        font-size: 110%;
+    }
+    .say-hi{
+        font-size: 110%;
+    }
+    .text1{
+        font-size: 85%;
+    }
+    .list-items a{
+        font-size: 75%;
+    }
+    .pictures img{
+        padding: 5px 0 0 5px;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width : 1200px){
+    .paragraph{
+        font-size: 95%;
+    }
+    .logo-box img{
+        width: 28%;
+    }
+    #features img{
+        width: 70%;
+    }
+    .title1{
+        font-size: 90%;
+        padding: 10px 5px 5px 10px;
+    }
+    .text{
+        font-size: 80%;
+        padding: 0 5px 5px 0;
+    }
+    #get-notify img{
+        float: right;
+        width: 60%;
+        height: 80%;
+    }
+    #get-notify {
+        padding-bottom: 50px;
+    }
+    .get-notify-title{
+        font-size: 100%;
+    }
+    .some-text{
+        font-size: 80%;
+    }
+    .email-input input{
+        width: 13%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+    }
+    .email-input input[type='text']{
+        width: 26%;
+        height: 2em;
+        font-size: 70%;
+        border-radius: 5px;
+    }
+    input::placeholder{
+        font-size: 80%;
+    }
+
+    .quote1{
+        font-size: 80%;
+    }
+    .name{
+        font-size: 90%;
+    }
+    .say-hi{
+        font-size: 90%;
+    }
+    .text1{
+        font-size: 80%;
+    }
+    .list-items a{
+        font-size: 70%;
+    }
+    .pictures img{
+        padding: 5px 0 0 5px;
+    }
+
+}
