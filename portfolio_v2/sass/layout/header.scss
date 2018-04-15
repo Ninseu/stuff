@@ -1,0 +1,23 @@
+.header {
+  &__logo-box img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+  }
+  &__logo-box{
+
+  }
+  &__text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
